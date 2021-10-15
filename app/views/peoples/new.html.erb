@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TechTogether</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= form_with url: "/peoples/", method: :post do |form| %>
+      <%= form.label :name, "Name:" %>
+      <%= form.text_field :name %>
+      <%= form.label :name, "Age:" %>
+      <%= form.text_field :age %>
+      <%= form.submit "Submit" %>
+    <% end %>
+  </body>
+</html>

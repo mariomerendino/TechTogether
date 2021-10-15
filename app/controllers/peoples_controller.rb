@@ -10,7 +10,9 @@ class PeoplesController < ApplicationController
     render json: { name: 'mario', age: 25 }
   end
 
+  def new
+  end
+
   def create
-    
   end
 end
