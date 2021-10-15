@@ -1,24 +1,11 @@
-# README
+### README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Setup
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. Pre-reqs:
+  * Ensure you have bundler installed `gem install bundler`
+  * Ensure you have postgresql installed
+2. Clone the repo, and enter the directory
+3. run `bundle install`
+4. run `rake db:setup`
+5. run `rake db:migrate`
