@@ -1,5 +1,7 @@
+# Peoples controller
 class PeoplesController < ApplicationController
   def index
+    @people = []
   end
 
   def show
@@ -14,5 +16,6 @@ class PeoplesController < ApplicationController
   end
 
   def create
+    
   end
 end

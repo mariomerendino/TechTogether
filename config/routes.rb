@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   get '/people/:id', to: 'peoples#show'
   get '/peoples/new', to: 'peoples#new'
   post '/peoples/', to: 'peoples#create'
+  get '/people/', to: 'peoples#index'
   get '/people_mobile/:id', to: 'peoples#show_mobile'
 end
